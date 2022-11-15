@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Pertama Aji</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js">
+        <script type="text/javascript" src="particles.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        </div>
+    <nav>
+        <div class="wrapper">
+            <div class="logo">
+                <span class="text first-text">I'm a</span>
+                <span class="text sec-text">Coder</span>
+                <script>
+                    const text = document.querySelector(".sec-text");
+            
+                    const textLoad = () => {
+                        setTimeout(() => {
+                            text.textContent = "Coder";
+                        }, 0);
+                        setTimeout(() => {
+                            text.textContent = "Frontender";
+                        }, 4000);
+                        setTimeout(() => {
+                            text.textContent = "Freelancer";
+                        }, 8000); //1s = 1000 milliseconds
+                    }
+                    textLoad();
+                    setInterval(textLoad, 12000);
+                </script>            
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Home</a></li>
+                    <li><a href="https://www.instagram.com/raden.ajisetiawan/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/muhammadaji.setiawan.733" target="_blank">Facebook</a></li>
+                    <li><a href="https://wa.me/qr/P3NRIKCMDUBYM1" target="_blank" class="tbl-ungu">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!--Untuk Home-->
+        <section id="home">
+            <img src="images/orang ganteng no bg.png" style="height: 600px;"/>
+            <div class="kolom">
+                <p class="deskripsi">Website ini dibuat dengan penuh kasih sayang :3 </p>
+                <h2>Bulatkan tekad, Mari berkoding</h2>
+                <p>Bahwa sesungguhnya Kemerdekaan itu ialah hak segala bangsa dan oleh sebab itu, maka penjajahan di  atas dunia harus dihapuskan, karena tidak sesuai dengan perikemanusiaan dan perikeadilan. <br>
+                    Dan perjuangan pergerakan kemerdekaan Indonesia telah sampailah kepada saat yang berbahagia dengan selamat sentausa mengantarkan rakyat Indonesia ke depan pintu gerbang kemerdekaan Negara Indonesia, yang merdeka, bersatu, berdaulat, adil dan makmur.
+                    </p>
+                <p><a href="https://youtu.be/Cjb0H1F-Szg" target="_blank" class="tbl-pink">Pelajari Lebih Lanjut</a></p>
+            </div>
+        </section>
+        
+        
+    </div>
+    
+</body>
+</html>

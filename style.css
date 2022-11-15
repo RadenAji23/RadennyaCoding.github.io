@@ -1,0 +1,191 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins' , sans-serif;
+}
+
+#particles-js {
+    background: #262626;
+    height: 100vh;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #particles-js{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #particles-js{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+    position: relative; 
+}
+
+.logo {
+    width: 246px;
+    overflow: hidden;
+    float: left;
+    font-family:'Poppins', sans-serif;
+}
+
+.logo .text {
+    position: relative;
+    color: crimson;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.logo .text.first-text {
+    color: #FFFFFF;
+}
+
+.text.sec-text:before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    border-left: 2px solid crimson;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate{
+    40%, 60% {
+        left: calc(100% + 4px);
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 70px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background:#222;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: crimson;
+    transition: all .4s ease-in-out;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF ; 
+}
+
+h2 {
+    font-family: 'poppins' , sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: crimson ; 
+    width: 100%;
+    line-height: 20px;
+}    
+
+a.tbl-ungu {
+    background-color: crimson;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-ungu:hover {
+    background-color: rgb(167, 15, 45);
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a.tbl-pink {
+    background: crimson;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;    
+}
+
+a.tbl-pink:hover {
+    background: rgb(167, 15, 45) ;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    color: #FFFFFF;
+    font-family: 'poppins' , sans-serif;
+
+}
+
